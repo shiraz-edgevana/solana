@@ -114,10 +114,10 @@ ExecStop=/home/sol/.local/share/solana/install/active_release/bin/solana-validat
 WantedBy=multi-user.target' > /etc/systemd/system/sol.service
 
 #Install Elastic Agent
-curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.3.3-linux-x86_64.tar.gz
-tar xzvf elastic-agent-8.3.3-linux-x86_64.tar.gz
-cd elastic-agent-8.3.3-linux-x86_64
-sudo ./elastic-agent install --url=https://985851492f0141fdaf9401cc81d39493.fleet.us-central1.gcp.cloud.es.io:443 --enrollment-token=$ELASTIC_ENROLLMENT_TOKEN
+#curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.3.3-linux-x86_64.tar.gz
+#tar xzvf elastic-agent-8.3.3-linux-x86_64.tar.gz
+#cd elastic-agent-8.3.3-linux-x86_64
+#sudo ./elastic-agent install --url=https://985851492f0141fdaf9401cc81d39493.fleet.us-central1.gcp.cloud.es.io:443 --enrollment-token=$ELASTIC_ENROLLMENT_TOKEN
 
 systemctl daemon-reload
 systemctl enable --now sol
