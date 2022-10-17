@@ -3,7 +3,7 @@
 #Run as root
 
 echo SOLANA_NETWORK="testnet" >> /etc/environment #Choose from 'testnet', 'devnet', or 'mainnet-beta'
-export ELASTIC_ENROLLMENT_TOKEN="RHpHdldvSUJpQUFXUVpid0lzVTA6TkROcHBfSjFUREtoMm1jVUR3b3ViUQ=="
+#export ELASTIC_ENROLLMENT_TOKEN=
 
 #Ensure your PC is updated and upgraded to the latest version
 apt update
